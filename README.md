@@ -92,7 +92,7 @@ The system converts each URL into numerical features and trains a Random Forest 
 
 The trained model is saved as:
 
-\*\*model/phishing_model.pkl
+```model/phishing_model.pkl```
 
 3. URL Prediction
 
@@ -105,11 +105,116 @@ displays prediction probability
 
 Example output:
 
+```
 === PREDICTION RESULT ===
 Result: PHISHING URL
 Phishing Probability: 100.00%
 Legitimate Probability: 0.00%
+```
+## Installation Guide
+Step 1 — Clone the Repository
+```
+git clone https://github.com/yourusername/phishing-url-detector.git
+cd phishing-url-detector
+```
+Step 2 — Install Required Libraries
+```
+pip install -r requirements.txt
+```
+Step 3 — Train the Model
+
+Run the training script:
+```
+python src/train_model.py
+```
+This will:
+
+read the dataset
+extract features
+train the machine learning model
+save the trained model
+
+Step 4 — Predict URLs
+
+After training, run:
+```
+python src/predict.py
+```
+Example:
+```
+Enter a URL to analyze:
+http://secure-bank-login-update.xyz
+```
+Output example:
+```
+Result: PHISHING URL
+Phishing Probability: 91.25%
+```
+
+## Example URLs to Test
+
+Legitimate examples:
+```
+https://google.com
+https://github.com
+https://openai.com
+```
+Phishing-style examples:
+```
+http://secure-bank-login-update.xyz
+http://verify-paypal-login-security.com
+http://free-gift-card-win-now.ru
 
 ```
 
+## Dataset
+The dataset used in this project contains URLs labeled as either legitimate or phishing.
+
+Example dataset format:
 ```
+url,label
+http://google.com,0
+https://github.com,0
+http://verify-paypal-login-security.com,1
+```
+
+For demonstration purposes, a small dataset is included in the repository.
+For better accuracy, the model should be trained on larger phishing datasets.
+
+## Limitations
+
+This project is a prototype system and has several limitations:
+
+- small dataset size
+- only URL-based features are used
+- no domain reputation analysis
+- no DNS or WHOIS features
+- no webpage content analysis
+
+Therefore, it should not be considered a full phishing detection system.
+
+## Future Improvements
+This project can be improved in several ways:
+
+- using a larger phishing dataset
+- adding domain age analysis (WHOIS)
+- detecting shortened URLs
+- analyzing webpage content
+- implementing deep learning models
+- building a web interface using Flask or Streamlit
+- creating a browser extension for phishing detection
+
+## Learning Outcomes
+This project helped practice the following concepts:
+
+- Python programming
+- data preprocessing
+- feature engineering
+- machine learning classification
+- cybersecurity threat analysis
+- GitHub project management
+
+
+## Author
+D.V. Lashini Chamodi
+
