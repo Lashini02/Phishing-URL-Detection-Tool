@@ -9,7 +9,7 @@ This project is a Machine Learning based Phishing URL Detection Tool developed u
 Instead of relying on external APIs or blacklists, this tool focuses on URL feature analysis. It extracts several characteristics from a given URL and uses a trained machine learning model to determine whether the URL shows suspicious patterns.
 
 This project was built as a cybersecurity and machine learning practice project and is suitable for demonstrating practical skills in Python, data processing, and basic security analysis.
-
+*****
 ## Why This Project?
 
 Phishing websites often contain suspicious patterns such as:
@@ -23,6 +23,7 @@ excessive symbols or special characters
 By analyzing these patterns, we can train a machine learning model to recognize potentially malicious URLs.
 
 The purpose of this project is to demonstrate how machine learning can assist in detecting phishing attempts using URL analysis.
+*****
 
 ## Features
 
@@ -34,14 +35,14 @@ This tool provides the following features:
 - Uses a machine learning classifier for prediction
 - Displays detailed feature analysis for each URL
 - Outputs phishing probability and classification result
-
+*****
 ## Technologies Used
 
 - Python
 - pandas
 - scikit-learn
 - joblib
-
+*****
 ## Project Structure
 
 ```bash
@@ -59,7 +60,7 @@ phishing-url-detector/
 └── .gitignore
 
 ```
-
+*****
 ## How the System Works
 
 The system works in three main stages.
@@ -109,6 +110,7 @@ Result: PHISHING URL
 Phishing Probability: 100.00%
 Legitimate Probability: 0.00%
 ```
+*****
 ## Installation Guide
 Step 1 — Clone the Repository
 ```
@@ -148,7 +150,7 @@ Output example:
 Result: PHISHING URL
 Phishing Probability: 91.25%
 ```
-
+*****
 ## Example URLs to Test
 
 Legitimate examples:
@@ -164,7 +166,7 @@ http://verify-paypal-login-security.com
 http://free-gift-card-win-now.ru
 
 ```
-
+*****
 ## Dataset
 The dataset used in this project contains URLs labeled as either legitimate or phishing.
 
@@ -175,10 +177,10 @@ http://google.com,0
 https://github.com,0
 http://verify-paypal-login-security.com,1
 ```
-
+*****
 For demonstration purposes, a small dataset is included in the repository.
 For better accuracy, the model should be trained on larger phishing datasets.
-
+*****
 ## Limitations
 
 This project is a prototype system and has several limitations:
@@ -190,7 +192,7 @@ This project is a prototype system and has several limitations:
 - no webpage content analysis
 
 Therefore, it should not be considered a full phishing detection system.
-
+*****
 ## Future Improvements
 This project can be improved in several ways:
 
@@ -201,7 +203,7 @@ This project can be improved in several ways:
 - implementing deep learning models
 - building a web interface using Flask or Streamlit
 - creating a browser extension for phishing detection
-
+*****
 ## Learning Outcomes
 This project helped practice the following concepts:
 
@@ -211,7 +213,7 @@ This project helped practice the following concepts:
 - machine learning classification
 - cybersecurity threat analysis
 - GitHub project management
-
+*****
 
 ## Author
 D.V. Lashini Chamodi
