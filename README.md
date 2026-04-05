@@ -58,8 +58,6 @@ phishing-url-detector/
 ├── README.md
 └── .gitignore
 
-
- How the System Works
 ```
 
 ## How the System Works
